@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Truffle</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/560ecaf078.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <section class="page">
+        <nav>
+            <a href="#" class="top"> <i class="fas fa-book"></i> </a>
+            <a href="#"> <i class="fas fa-search"></i> </a>
+            <a href="#"> <i class="fas fa-shopping-cart"></i> </a>
+            <a href="#" class="bottom"> <i class="fas fa-sign-out-alt"></i> </a>
+        </nav>
     <h1>Truffle</h1>
     <form action="/grabRecipe" method="POST">
         <input type="text" name="url" placeholder="Paste the URL of a recipe" id="">
@@ -35,6 +45,7 @@
             <%=recipe.instructions[i] %>
         </li>
         <% } %>
+    </section>
     
 
 

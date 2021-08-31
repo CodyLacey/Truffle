@@ -19,6 +19,45 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-h1 {
-  color: red;
+section {
+  color: #dde2e3;
+}
+h1, form{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image2.jpg);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #333333;
+  border-right: 1px solid #333;
+}
+nav a {
+  font-size: 1.8em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 15px;
+  color: #dde2e3;
+}
+nav a:hover {
+  color: #009879;
+}
+.top {
+  margin-top: 100px;
+}
+
+.page {
+  margin-left: 60px;
+  padding: 25px;
 }
