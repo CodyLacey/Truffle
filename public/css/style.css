@@ -48,6 +48,35 @@ nav a {
 nav a:hover {
   color: #fcc201;
 }
+.tool {
+  display: none;
+  position: absolute;
+  left: 3em;
+  font-size: 0.6em;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #dde2e3;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  color: #333;
+  border: 1px solid #c0c0c0;
+  opacity: 1; 
+}
+.top:hover .tip1, .search:hover .tip2, .cart:hover .tip3, .bottom:hover .tip4 {
+  display: block;
+}
+.tip1{
+  top: 6.6em;
+}
+.tip2{
+  top: 10.3em;
+}
+.tip3 {
+  top: 14em;
+  left: 3.3em;
+}
+.tip4{
+  top: 17.7em;
+}
 .top {
   margin-top: 100px;
 }
@@ -99,6 +128,30 @@ nav a:hover {
 /* MEDIA QUERIES
 /*******************************************/
 
+@media screen and (min-width:1920px) {
+  .importRecipe {
+    width: 35%;
+    border:0; outline:0;
+    border-radius: 1em;
+     padding: 1em;
+     display: block;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+}
+
+  .importRecipe2 {
+    background: #fff;
+    width: 5em;
+    border:0; outline:0;
+    border-radius: 1em;
+    margin-left: -1.7em;
+    margin-top: 1em;
+}
+  .importRecipe2:hover {
+    background: #fcc201;
+}
+}
+
 @media screen and (max-width: 680px) {
   nav {
     position: fixed;
@@ -142,28 +195,3 @@ nav a:hover {
     width: 100%;
   }
 }
-
-/* 
-@media screen and (max-width: 1680px) {
-
-			.truffle {
-				color: chartreuse;
-			}
-
-@media screen and (max-width: 980px) {
-	.truffle {
-				color: blue;
-			}
-
-		}
-
-@media screen and (max-width: 480px) {
-  .truffle {
-    color: black;
-  }
-}
-@media screen and (max-width: 480px) {
-  .truffle {
-    color: black;
-  }
-} */
