@@ -8,7 +8,7 @@
     <title>Truffle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css" />
@@ -19,37 +19,54 @@
 <body>
     <section class="page">
         <nav>
-            <a href="#" class="top"> <i class="fas fa-book"></i> </a>
-            <a href="#"> <i class="fas fa-search"></i> </a>
-            <a href="#"> <i class="fas fa-shopping-cart"></i> </a>
-            <a href="#" class="bottom"> <i class="fas fa-sign-out-alt"></i> </a>
+            <a href="#" class="top">
+                <i class="fas fa-book"></i>
+                <span class="tool tip1">Recipes</span>
+            </a>
+            <a href="#" class="search">
+                <i class="fas fa-search"></i>
+                <span class="tool tip2">Search</span>
+            </a>
+            <a href="#" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="tool tip3">Grocery</span>
+            </a>
+            <a href="#" class="bottom">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="tool tip4">Logout</span>
+            </a>
         </nav>
         <section>
-            <h1>Truffle</h1>
-            <form action="/grabRecipe" method="POST">
-                <input type="text" name="url" placeholder="Paste the URL of a recipe" id="">
-                <input type="submit" name="" id="">
+            <h1 class="truffle smallTruffle">Truffle</h1>
+            <form class="form smallForm" action="/grabRecipe" method="POST">
+                <input class="importRecipe smallInput" type="text" name="url" placeholder="Paste the URL of a recipe" id="">
+                <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i class="fas fa-search"></i></button>
             </form>
-            <h2 class="recipeName"><%= recipe.name %></h2>
-            <h3 class="recipeDescription"><%= recipe.description %></h3>
-            <span class="recipePrep"><%= recipe.time.prep %></span>
-            <span class="recipeCook"><%= recipe.time.cook %></span>
-            <span class="recipeTotal"><%= recipe.time.total %></span>
-            <span class="recipeServings"><%= recipe.servings %></span>
-            <img src="<%= recipe.image %>" alt="">
-
-            <ul class='recipeIngredients'>
-            <% for(let i=0; i < recipe.ingredients.length; i++) {%>
-                <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
-            <% } %>
-            </ul>
-            <ol class='recipeInstructions'>
-            <% for(let i=0; i < recipe.instructions.length; i++) {%>
-                <li class='recipeInstructions'>
-                    <%=recipe.instructions[i] %>
-                </li>
-            <% } %>
-            </ol>
+        </section>
+        <section class='recipe'>
+            <section class="recipePt1">
+                <img class="recipeImage" src="<%= recipe.image %>" alt="">
+                <h2 class="recipeName"><%= recipe.name %></h2>
+                <h3 class="recipeDescription"><%= recipe.description %></h3>
+                <span class="recipePrep"><%= recipe.time.prep %></span>
+                <span class="recipeCook"><%= recipe.time.cook %></span>
+                <span class="recipeTotal"><%= recipe.time.total %></span>
+                <span class="recipeServings"><%= recipe.servings %></span>
+            </section>
+            <section class="recipePt2">
+                <ul class='recipeIngredients'>
+                <% for(let i=0; i < recipe.ingredients.length; i++) {%>
+                    <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
+                <% } %>
+                </ul>
+                <ol class='recipeInstructions'>
+                <% for(let i=0; i < recipe.instructions.length; i++) {%>
+                    <li class='recipeInstructions'>
+                        <%=recipe.instructions[i] %>
+                    </li>
+                <% } %>
+                </ol>
+            </section>
         </section>
     </section>
     

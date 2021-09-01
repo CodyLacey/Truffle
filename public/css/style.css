@@ -17,7 +17,7 @@ img{
 
 
 /******************************************
-/* ADDITIONAL STYLES
+/* HOME PAGE
 /*******************************************/
 section {
   color: #dde2e3;
@@ -125,7 +125,7 @@ nav a:hover {
 
 
 /******************************************
-/* MEDIA QUERIES
+/* MEDIA QUERIES FOR HOME PAGE
 /*******************************************/
 
 @media screen and (min-width:1920px) {
@@ -207,4 +207,29 @@ nav a:hover {
   .importRecipe {
     width: 100%;
   }
+}
+
+/******************************************
+/* RECIPE PAGE
+/*******************************************/
+.smallTruffle, .smallInput{
+  float: left;
+  clear: both;
+  
+}
+.smallForm{
+  width: 30%;
+}
+.smallTruffle {
+  margin: 0;
+  font-size: 4em;
+  padding-left: 1em;
+}
+.recipe {
+  background: black;
+}
+.recipeImage {
+  width: 10%;
+  height: 10%;
+  border-radius: 2em;
 }
