@@ -22,11 +22,6 @@ img{
 section {
   color: #dde2e3;
 }
-h1, form{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
 body {
   margin: 0;
   background-position: center center;
@@ -60,4 +55,36 @@ nav a:hover {
 .page {
   margin-left: 60px;
   padding: 25px;
+}
+.container1 {
+  width: 50%;
+  height: 100px;
+  margin-top: 20%;
+  margin-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  flex: 0 0 100%;
+} */
+.truffle {
+  font-size: 16em !important;
+  margin-bottom: 0;
+}
+.filler, .filler2 {
+  font-size: 1.5em;
+}
+
+.filler2 {
+  display: flex;
+  justify-content: center;
+}
+.importRecipe, .importRecipe2 {
+  border: 0 solid red;
+}
+.importRecipe {
+  width: 80%;
+
 }

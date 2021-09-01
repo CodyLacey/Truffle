@@ -21,30 +21,33 @@
             <a href="#"> <i class="fas fa-shopping-cart"></i> </a>
             <a href="#" class="bottom"> <i class="fas fa-sign-out-alt"></i> </a>
         </nav>
-    <h1>Truffle</h1>
-    <form action="/grabRecipe" method="POST">
-        <input type="text" name="url" placeholder="Paste the URL of a recipe" id="">
-        <input type="submit" name="" id="">
-    </form>
-    <h2 class="recipeName"><%= recipe.name %></h2>
-    <h3 class="recipeDescription"><%= recipe.description %></h3>
-    <span class="recipePrep"><%= recipe.time.prep %></span>
-    <span class="recipeCook"><%= recipe.time.cook %></span>
-    <span class="recipeTotal"><%= recipe.time.total %></span>
-    <span class="recipeServings"><%= recipe.servings %></span>
-    <img src="<%= recipe.image %>" alt="">
+        <section>
+            <h1>Truffle</h1>
+            <form action="/grabRecipe" method="POST">
+                <input type="text" name="url" placeholder="Paste the URL of a recipe" id="">
+                <input type="submit" name="" id="">
+            </form>
+            <h2 class="recipeName"><%= recipe.name %></h2>
+            <h3 class="recipeDescription"><%= recipe.description %></h3>
+            <span class="recipePrep"><%= recipe.time.prep %></span>
+            <span class="recipeCook"><%= recipe.time.cook %></span>
+            <span class="recipeTotal"><%= recipe.time.total %></span>
+            <span class="recipeServings"><%= recipe.servings %></span>
+            <img src="<%= recipe.image %>" alt="">
 
-    <ul class='recipeIngredients'></ul>
-    <% for(let i=0; i < recipe.ingredients.length; i++) {%>
-        <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
-    <% } %>
-
-    <ol class='recipeInstructions'></ol>
-    <% for(let i=0; i < recipe.instructions.length; i++) {%>
-        <li class='recipeInstructions'>
-            <%=recipe.instructions[i] %>
-        </li>
-        <% } %>
+            <ul class='recipeIngredients'>
+            <% for(let i=0; i < recipe.ingredients.length; i++) {%>
+                <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
+            <% } %>
+            </ul>
+            <ol class='recipeInstructions'>
+            <% for(let i=0; i < recipe.instructions.length; i++) {%>
+                <li class='recipeInstructions'>
+                    <%=recipe.instructions[i] %>
+                </li>
+            <% } %>
+            </ol>
+        </section>
     </section>
     
 

@@ -1,4 +1,8 @@
+document.querySelector('.top').addEventListener('click', home)
 
+function home() {
+    location.href = "/"
+}
 
 
 
