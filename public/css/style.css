@@ -172,6 +172,19 @@ nav a:hover {
   nav a:hover {
     color: #fcc201;
   }
+  .tip1{
+    top: 11.5em;
+  }
+  .tip2{
+    top: 15.3em;
+  }
+  .tip3 {
+    top: 19.4em;
+    left: 3.3em;
+  }
+  .tip4{
+    top: 23.2em;
+  }
   .page{
     margin: 30px;
   }
