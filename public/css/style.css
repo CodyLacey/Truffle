@@ -27,7 +27,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image3.jpg);
 }
 nav {
   position: fixed;
@@ -59,8 +59,8 @@ nav a:hover {
 .container1 {
   width: 50%;
   height: 100px;
-  margin-top: 20%;
-  margin-left: 30%;
+  margin-top: 1%;
+  margin-left: 25%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
