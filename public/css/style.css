@@ -27,7 +27,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image2.jpg);
 }
 nav {
   position: fixed;
@@ -233,3 +233,7 @@ nav a:hover {
   height: 10%;
   border-radius: 2em;
 }
+.recipePt1 {
+  height: 10%;
+}
+/*make recipe picture bigger */
