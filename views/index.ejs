@@ -7,7 +7,7 @@
     <title>Truffle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -15,20 +15,21 @@
     <script src="https://kit.fontawesome.com/560ecaf078.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
+    <section class="page">
         <nav>
             <a href="#" class="top"> <i class="fas fa-book"></i> </a>
             <a href="#"> <i class="fas fa-search"></i> </a>
             <a href="#"> <i class="fas fa-shopping-cart"></i> </a>
             <a href="#"class="bottom"> <i class="fas fa-sign-out-alt"></i> </a>
         </nav>
-        <section class="container1">
-            <h1 class="center truffle">Truffle</h1>
-            <span class="center filler">Get just the ingredients and directions for any recipe. No life story, no popups, no email lists.</span>
-            <!-- <span class="center filler2">life story, no popups, no email lists.</span> -->
-            <form class="center" action="/grabRecipe" method="POST">
+        <section>
+            <h1 class="truffle">Truffle</h1>
+            <span class="blurb">Get just the ingredients and directions for any recipe. No</span>
+            <span class="blurb2">life story, no popups, no email lists.</span>
+            <span class="blurb3">Get just the ingredients and directions for any recipe. No life story, no popups, no email lists.</span>
+            <form class="form" action="/grabRecipe" method="POST">
                 <input class="importRecipe" type="text" name="url" placeholder="Paste the URL of a recipe" id="">
-                <input class="importRecipe2" type="submit" value="Import" name="" id="">
+                <button class="importRecipe2" type="submit" value="Import" name="" id=""><i class="fas fa-search"></i></button>
             </form>
         </section>
     </section>

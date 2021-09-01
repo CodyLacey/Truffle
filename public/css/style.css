@@ -46,7 +46,7 @@ nav a {
   color: #dde2e3;
 }
 nav a:hover {
-  color: #009879;
+  color: #fcc201;
 }
 .top {
   margin-top: 100px;
@@ -56,35 +56,113 @@ nav a:hover {
   margin-left: 60px;
   padding: 25px;
 }
-.container1 {
-  width: 50%;
-  height: 100px;
-  margin-top: 1%;
-  margin-left: 25%;
+.truffle, .blurb, .blurb2, .form{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
-.center {
-  flex: 0 0 100%;
-} */
-.truffle {
-  font-size: 16em !important;
-  margin-bottom: 0;
-}
-.filler, .filler2 {
+.blurb, .blurb2 {
   font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #dde2e3;
+  
 }
-
-.filler2 {
-  display: flex;
-  justify-content: center;
+.blurb2 {
+  margin-bottom: 2%;
 }
-.importRecipe, .importRecipe2 {
-  border: 0 solid red;
+.blurb3 {
+  display: none;
 }
 .importRecipe {
-  width: 80%;
-
+  width: 50%;
+   border:0; outline:0;
+   border-radius: 1em;
+     padding: 1em;
+     display: block;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
 }
+
+.importRecipe2 {
+  background: #fff;
+  width: 5em;
+  border:0; outline:0;
+   border-radius: 1em;
+   margin-left: -1.7em;
+   margin-top: 1em;
+}
+.importRecipe2:hover {
+  background: #fcc201;
+}
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 680px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background-color: #333333;
+    border-right: 1px solid #333;
+  }
+  nav a {
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #dde2e3;
+  }
+  nav a:hover {
+    color: #fcc201;
+  }
+  .page{
+    margin: 30px;
+  }
+  .truffle {
+    font-size: 4em;
+  }
+
+  .blurb, .blurb2 {
+   display: none;
+  }
+  .blurb3 {
+    display: block;
+    font-size: 1.3em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #dde2e3;
+    margin-bottom: 2%;
+    
+  }
+  .importRecipe {
+    width: 100%;
+  }
+}
+
+/* 
+@media screen and (max-width: 1680px) {
+
+			.truffle {
+				color: chartreuse;
+			}
+
+@media screen and (max-width: 980px) {
+	.truffle {
+				color: blue;
+			}
+
+		}
+
+@media screen and (max-width: 480px) {
+  .truffle {
+    color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  .truffle {
+    color: black;
+  }
+} */
