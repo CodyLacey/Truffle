@@ -26,8 +26,9 @@ body {
   margin: 0;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat; background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image2.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image9.jpg);
 }
 nav {
   position: fixed;
@@ -225,13 +226,15 @@ nav a:hover {
   font-size: 4em;
   padding-left: 1em;
 }
-.recipe {
+/* .recipe {
   background: black;
-}
+} */
 .recipeImage {
-  width: 10%;
-  height: 10%;
+  width: 15%;
+  height: 15%;
   border-radius: 2em;
+  margin-left: 30%;
+  margin-top: 10%;
 }
 .recipePt1 {
   height: 10%;

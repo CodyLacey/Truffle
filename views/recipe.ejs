@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/560ecaf078.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="back">
     <section class="page">
         <nav>
             <a href="#" class="top">
@@ -54,11 +54,13 @@
                 <span class="recipeServings"><%= recipe.servings %></span>
             </section>
             <section class="recipePt2">
+                <span>Ingredients</span>
                 <ul class='recipeIngredients'>
                 <% for(let i=0; i < recipe.ingredients.length; i++) {%>
                     <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
                 <% } %>
                 </ul>
+                <span>Directions</span>
                 <ol class='recipeInstructions'>
                 <% for(let i=0; i < recipe.instructions.length; i++) {%>
                     <li class='recipeInstructions'>
