@@ -8,6 +8,9 @@
     <title>Truffle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@400;600&family=Source+Sans+Pro:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
@@ -57,24 +60,28 @@
                     <span class="serving"> <%= recipe.servings %> </span>
                     <span class="recipeServings">Servings</span>
                     <i id="link" class="fas fa-link recipeOg"></i>
-                    <a href="" class="recipeOg">Original Recipe</a>
+                    <a href="#" class="recipeOg">Original Recipe</a>
                 </section>
             </section>
             <section class="recipePt2">
-                <span>Ingredients</span>
-                <ul class='recipeIngredients'>
-                <% for(let i=0; i < recipe.ingredients.length; i++) {%>
-                    <li class='recipeIngredients'><%=recipe.ingredients[i] %></li>
-                <% } %>
-                </ul>
-                <span>Directions</span>
-                <ol class='recipeInstructions'>
-                <% for(let i=0; i < recipe.instructions.length; i++) {%>
-                    <li class='recipeInstructions'>
-                        <%=recipe.instructions[i] %>
-                    </li>
-                <% } %>
-                </ol>
+                <section class="recipeIngredients2">
+                    <span class="recipeIngredients strong"><strong>Ingredients</strong></span>
+                    <ul class='recipeIngredients'>
+                    <% for(let i=0; i < recipe.ingredients.length; i++) {%>
+                        <li class='recipeIngredients border'><%=recipe.ingredients[i] %></li>
+                    <% } %>
+                    </ul>
+                </section>
+                <section class="recipeInstructions2">
+                    <span class="recipeInstructions"><strong>Directions</strong></span>
+                    <ol class='recipeInstructions'>
+                    <% for(let i=0; i < recipe.instructions.length; i++) {%>
+                        <li class='recipeInstructions'>
+                            <%=recipe.instructions[i] %>
+                        </li>
+                    <% } %>
+                    </ol>
+                </section>
             </section>
         </section>
     </section>

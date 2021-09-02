@@ -85,6 +85,7 @@ nav a:hover {
 .page {
   margin-left: 60px;
   padding: 25px;
+  padding-bottom: 200px;
 }
 .truffle, .blurb, .blurb2, .form{
   display: flex;
@@ -226,12 +227,23 @@ nav a:hover {
   padding-left: 1em;
 }
 .recipe {
-  border: 3px solid red;
+  border: 3px solid white;
+  border-radius: 1em;
+  background: white;
+  width: 60%;
+  height: 40%;
   margin-left: 10em;
   margin-top: 10em;
+  margin-right: 10em;
 }
-.recipePt1, .recipePt2 {
-  margin: 3em;
+.recipePt1 {
+  margin: 3em 3em 0 3em;
+}
+.recipePt2 {
+  margin: 0 2.5em 0 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .recipeImage, .recipeStuff {
   display: inline-block;
@@ -257,10 +269,12 @@ img {
   font-size: 2em;
   height: 1em;
   margin-bottom: 1em;
+  color: black;
 }
 .recipeCook, .recipeServings, .recipeOg {
   position: relative;
   margin-bottom: 2em;
+  color: black;
 }
 .recipeCook, .recipeServings {
   margin-right: 1em;
@@ -268,7 +282,46 @@ img {
 .recipeOg {
   color: white;
 }
-
+.recipeIngredients, .recipeInstructions {
+  font-size: 1em;
+  font-family: 'Nunito Sons', sans-serif;
+  padding: 0.5em;
+  color: black;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+.recipeIngredients {
+  list-style-type: none;
+}
+.recipeInstructions {
+  line-height: 1.5em;
+} 
+.strong {
+  padding-bottom: 1.3em;
+}
+.border {
+  border-bottom: 1px solid #f2f2f2;
+}
+.recipeIngredients2, .recipeInstructions2 {
+  background-color: white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 0 0 0 2em;
+}
+.recipeInstructions2 {
+  padding-left: 2em;
+}
+.recipeIngredients2 {
+}
+strong {
+  font-size: 1.5em;
+}
+.fas {
+  color: black;
+}
 /******************************************
 /* MEDIA QUERIES FOR RECIPE PAGE
 /*******************************************/
