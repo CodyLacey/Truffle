@@ -153,7 +153,7 @@ nav a:hover {
 }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   nav {
     position: fixed;
     top: 0;
@@ -270,15 +270,31 @@ img {
 }
 
 /******************************************
-/* MEDIA QUERIES FOR HOME PAGE
+/* MEDIA QUERIES FOR RECIPE PAGE
 /*******************************************/
-
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 1440px) {
   .smallForm {
     position: relative;
-    width: 100%;
+    width: 80%;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .smallForm {
+    position: relative;
+    width: 80%;
+    margin: 0;
   }
   .page {
     padding-right: 0;
+  }
+  .recipe {
+    width: 100%;
+    margin: 3em 0 0 0;
+  }
+  .recipePt2 {
+    margin: 3em 0 0 0;
+  }
+  .recipeCook, .recipeServings, .serving, #clock, #pie {
+    display: none;
   }
 }
