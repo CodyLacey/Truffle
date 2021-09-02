@@ -216,7 +216,6 @@ nav a:hover {
 .smallTruffle, .smallInput{
   float: left;
   clear: both;
-  
 }
 .smallForm{
   width: 30%;
@@ -226,17 +225,60 @@ nav a:hover {
   font-size: 4em;
   padding-left: 1em;
 }
-/* .recipe {
-  background: black;
-} */
+.recipe {
+  border: 3px solid red;
+  margin-left: 10em;
+  margin-top: 10em;
+}
+.recipePt1, .recipePt2 {
+  margin: 3em;
+}
+.recipeImage, .recipeStuff {
+  display: inline-block;
+}
 .recipeImage {
-  width: 15%;
-  height: 15%;
-  border-radius: 2em;
+  width: 10em;
+  height: 10em;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 10em;
+  height: 10em;
+  border-radius: 1em;
+}
+.recipeStuff {
+  position: relative;
+  top: -5em;
+  margin-left: 1em;
+}
+.recipeName {
+  position: relative;
+  font-size: 2em;
+  height: 1em;
+  margin-bottom: 1em;
+}
+.recipePrep, .recipeServings, .recipeOg {
+  position: relative;
+  margin-bottom: 2em;
+}
+.recipePrep, .recipeServings {
+  margin-right: 1em;
+}
+.recipeOg {
+  color: white;
+}
+/* .recipeImage {
+  width: 10em;
+  height: 10em;
+  border-radius: 1em;
   margin-left: 30%;
   margin-top: 10%;
 }
-.recipePt1 {
-  height: 10%;
+.recipeName {
+  height: 20%;
 }
+.recipePrep {
+  display: block;
+} */
 /*make recipe picture bigger */

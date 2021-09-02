@@ -36,6 +36,7 @@ app.post('/grabRecipe', (req, res) => {
     recipeScraper(url)
     .then(data => {
         res.render('recipe.ejs', {recipe: data})
+        console.log(data);
     })
 
 
