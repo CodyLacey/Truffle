@@ -218,7 +218,7 @@ nav a:hover {
   clear: both;
 }
 .smallForm{
-  width: 30%;
+  width: 40%;
 }
 .smallTruffle {
   margin: 0;
@@ -258,27 +258,27 @@ img {
   height: 1em;
   margin-bottom: 1em;
 }
-.recipePrep, .recipeServings, .recipeOg {
+.recipeCook, .recipeServings, .recipeOg {
   position: relative;
   margin-bottom: 2em;
 }
-.recipePrep, .recipeServings {
+.recipeCook, .recipeServings {
   margin-right: 1em;
 }
 .recipeOg {
   color: white;
 }
-/* .recipeImage {
-  width: 10em;
-  height: 10em;
-  border-radius: 1em;
-  margin-left: 30%;
-  margin-top: 10%;
+
+/******************************************
+/* MEDIA QUERIES FOR HOME PAGE
+/*******************************************/
+
+@media screen and (max-width: 680px) {
+  .smallForm {
+    position: relative;
+    width: 100%;
+  }
+  .page {
+    padding-right: 0;
+  }
 }
-.recipeName {
-  height: 20%;
-}
-.recipePrep {
-  display: block;
-} */
-/*make recipe picture bigger */
