@@ -165,7 +165,7 @@ nav a:hover {
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   nav {
     position: fixed;
     top: 0;
@@ -441,7 +441,7 @@ a {
     padding: 0 0 1em 0.5em;
   }
 }
-@media screen and (min-width: 631px) {
+@media screen and (min-width: 651px) {
   .recipeName {
     position: relative;
     bottom: 1.5em;
@@ -459,7 +459,7 @@ a {
     padding: 0 0 0 1em;
   }
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 650px) {
   .recipeInstructions2 {
     margin-right: 2em;
     padding-left: 2em;
