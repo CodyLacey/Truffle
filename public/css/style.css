@@ -339,18 +339,14 @@ strong {
 #print {
   font-size: 1.5em;
   color: black;
-  padding: 0.5em;
+  padding: 1em 0 1em 0.5em;
 }
 .recipeSave {
   display: inline-block;
-  width: 50%;
 }
-.button4 {
+.recipeSaveLink, .button4 {
   display: block;
   font-family: 'Nunito Sons', sans-serif;
-  margin-left: 0.5em;
-  padding: 6%;
-  width: 8em;
   border:0.16em solid rgba(255,255,255,0);
   border-radius:1em;
   color:white;
@@ -358,6 +354,10 @@ strong {
   text-align:center;
   transition: all 0.2s;
   background-color: #ef233c;
+}
+.recipeSaveLink {
+  margin-left: 1em;
+  padding: 0.5em;
 }
 a {
   text-decoration: none;
@@ -428,8 +428,8 @@ a {
   }
   .recipeName {
     margin: 0 0.5em 0 0;
-    padding-left: 5.5em;
-    font-size: 1.2em;
+    padding-left: 3.5em;
+    font-size: 2em;
   }
   .recipeIngredients2 {
     margin-right: 6em;
@@ -439,15 +439,17 @@ a {
     padding: 2em;
   }
 }
-@media screen and (min-width: 480px) {
-  .recipeName {
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .recipeInstructions2 {
     margin-right: 2em;
     padding-left: 2em;
+  }
+  .recipeName {
+    font-size: 1.3em;
+    padding-left: 5em !important;
+  }
+  .recipePt1 {
+    height: 50%;
   }
 }
   
