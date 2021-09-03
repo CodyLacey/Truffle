@@ -246,11 +246,8 @@ nav a:hover {
   border: 3px solid white;
   border-radius: 1em;
   background: white;
-  width: 60%;
-  height: 40%;
-  margin-left: 10em;
-  margin-top: 10em;
-  margin-right: 10em;
+  align-self: center;
+  margin: auto;
 }
 .recipePt1 {
   margin: 3em 3em 0 3em;
@@ -447,6 +444,7 @@ a {
     bottom: 1.5em;
     padding-left: 6em;
     font-size: 2.2em !important;
+    margin-right: 2em;
   }
   .recipeImage {
     height: 10em;
