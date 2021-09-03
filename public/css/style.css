@@ -251,7 +251,10 @@ nav a:hover {
 }
 .recipePt1 {
   margin: 3em 3em 0 3em;
-  /* max-height: 20em; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
 .recipePt2 {
   margin: 0 2.5em 0 1em;
@@ -259,18 +262,13 @@ nav a:hover {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.recipeImage, .recipeStuff {
-  display: inline-block;
-}
+
 .recipeImage {
-  width: 10em;
-  height: 10em;
-  margin: 0;
-  padding: 0;
+  flex: 0 0 40%;
 }
 img {
+  object-fit: cover;
   width: 100%;
-  height: 100%;
   border-radius: 1em;
 }
 .recipeStuff {
@@ -279,11 +277,9 @@ img {
   margin-left: 1em;
 }
 .recipeName {
-  position: relative;
   font-size: 2em;
-  height: 1em;
-  margin-bottom: 1em;
   color: black;
+  padding-left: 1em;
 }
 .recipeCook, .recipeServings, .recipeOg {
   position: relative;
@@ -358,17 +354,22 @@ strong {
 a {
   text-decoration: none;
 }
-
-
 /******************************************
 /* MEDIA QUERIES FOR RECIPE PAGE
 /*******************************************/
-/* @media screen and (max-width: 1440px) {
-  .smallForm {
-    position: relative;
-    width: 80%;
+@media screen and (min-width: 1025px) {
+  .recipe {
+    width: 56em;
+    margin-top: 8em;
   }
-} */
+  .smallForm {
+    padding: 0;
+  }
+  .recipeExtra {
+    margin-left:  12em;
+    color: black;
+  }
+}
 @media screen and (max-width: 1024px) {
   .smallForm {
     position: relative;
@@ -401,16 +402,7 @@ a {
     display: none;
   }
   img {
-    width: 100%;
-    height: 100%;
     margin: 0;
-  }
-  .recipeImage {
-    position: relative;
-    margin: 1em 0 0 1em;
-    padding: 0;
-    height: 6em;
-    width: 6em;
   }
   .page {
     margin-right: 0;
@@ -423,8 +415,6 @@ a {
     margin-top: 0;
   }
   .recipeName {
-    margin: 0 0.5em 0 0;
-    padding-left: 3.5em;
     font-size: 2em;
   }
   .recipeInstructions2 {
@@ -438,20 +428,18 @@ a {
     padding: 0 0 1em 0.5em;
   }
 }
+@media screen and (min-width: 781px) {
+  .recipeName {
+    margin-right: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+  }
+  
+}
 @media screen and (min-width: 651px) {
   .recipeName {
-    position: relative;
-    bottom: 1.5em;
-    padding-left: 6em;
     font-size: 2.2em !important;
-    margin-right: 2em;
-  }
-  .recipeImage {
-    height: 10em;
-    width: 10em;
-    margin-left: 2em;
-    margin-top: 2em;
-    padding: 0;
   }
   .recipeInstructions2 {
     padding: 0 0 0 1em;
@@ -464,7 +452,6 @@ a {
   }
   .recipeName {
     font-size: 1.3em;
-    padding-left: 5em !important;
   }
   .recipePt1 {
     height: 50%;
@@ -476,7 +463,20 @@ a {
 }
 @media screen and (min-width: 500px) {
   .recipeName {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
 }
+@media screen and (min-width: 412px) {
+  .recipeName {
+    margin-right: 0;
+  }
+  .recipeSave {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 800px) {
+  .recipeName {
+    margin-right: 0;
+  }
   
+}

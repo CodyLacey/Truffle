@@ -51,25 +51,27 @@
                 <section class="recipeImage">
                     <img class="" src="<%= recipe.image %>" alt="">
                 </section>
+                <h2 class="recipeName"> <%= recipe.name %> </h2>
                 <section class="recipeStuff">
-                    <h2 class="recipeName"><%= recipe.name %></h2>
-                    <i id="clock" class="fas fa-clock"></i>
-                    <span class="recipeCook"> <%= recipe.time.cook %> </span>
-                    <!-- <span class="recipeTotal"><%= recipe.time.total %></span> -->
-                    <i id="pie" class="fas fa-chart-pie"></i>
-                    <span class="serving"> <%= recipe.servings %> </span>
-                    <span class="recipeServings">Servings</span>
-                    <i id="link" class="fas fa-link recipeOg"></i>
-                    <a href="#" class="recipeOg">Original Recipe</a>
+                    <section class="recipeExtra">
+                        <i id="clock" class="fas fa-clock"></i>
+                        <span class="recipeCook"> <%= recipe.time.cook %> </span>
+                        <!-- <span class="recipeTotal"><%= recipe.time.total %></span> -->
+                        <i id="pie" class="fas fa-chart-pie"></i>
+                        <span class="serving"> <%= recipe.servings %> </span>
+                        <span class="recipeServings">Servings</span>
+                        <i id="link" class="fas fa-link recipeOg"></i>
+                        <a href="#" class="recipeOg">Original Recipe</a>
+                    </section>
                 </section>
-                <section class="recipeSave">
-                    <a href="#" class="recipeSaveLink">
-                        <button class="button4">Save Recipe</button>
-                    </a>
-                    <a href="#">
-                        <i id="print" class="fas fa-print"></i>
-                    </a>
-                </section>
+            </section>
+            <section class="recipeSave">
+                <a href="#" class="recipeSaveLink">
+                    <button class="button4">Save Recipe</button>
+                </a>
+                <a href="#">
+                    <i id="print" class="fas fa-print"></i><span>Print</span>
+                </a>
             </section>
             <section class="recipePt2">
                 <section class="recipeIngredients2">
