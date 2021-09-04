@@ -89,7 +89,6 @@ nav a:hover {
 .page {
   margin-left: 60px;
   padding: 25px;
-  padding-bottom: 200px;
 }
 .truffle, .blurb, .blurb2, .form{
   display: flex;
@@ -367,7 +366,7 @@ a {
 @media screen and (min-width: 1025px) {
   .recipe {
     width: 56em;
-    margin-top: 8em;
+    margin-top: 4em;
   }
   .smallForm {
     padding: 0;
@@ -489,5 +488,13 @@ a {
   @page {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .recipeStuff {
+    position: relative;
+    top: 1em;
+    left: 2em;
+  }
+  .recipeName {
+    padding: 0;
   }
 }
