@@ -23,20 +23,16 @@ section {
   color: #dde2e3;
 }
 body {
-  margin: 0;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; 
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image10.jpg);
-  max-height: 100vh;
-  overflow-y: scroll;
-  position: absolute;
-  top:0px;
-  left:0px;
-  width: 100%;
-  height: 100%;
-  height: 100vh; height: calc(var(--vh, 1vh) * 100);
 }
 nav {
   position: fixed;
@@ -257,7 +253,7 @@ nav a:hover {
 
 }
 .recipePt2 {
-  margin: 0 2.5em 0 1em;
+  margin: 0 2.5em 3em 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -281,10 +277,11 @@ img {
   color: black;
   padding-left: 1em;
 }
-.recipeCook, .recipeServings, .recipeOg {
+.recipeCook, .recipeServings, .recipeOg, .serving {
   position: relative;
   margin-bottom: 2em;
-  color: black;
+  color: #8f8fa3;
+  font-family: 'Nunito Sons', sans-serif;
 }
 .recipeCook, .recipeServings {
   margin-right: 1em;
@@ -325,12 +322,11 @@ img {
 strong {
   font-size: 1.5em;
 }
-#clock, #pie, #link {
-  color: black;
+#clock, #pie, #link, #print {
+  color: #8f8fa3;
 }
 #print {
   font-size: 1.5em;
-  color: black;
   padding: 1em 0 1em 0.5em;
 }
 .recipeSave {
@@ -341,18 +337,29 @@ strong {
   font-family: 'Nunito Sons', sans-serif;
   border:0.16em solid rgba(255,255,255,0);
   border-radius:1em;
-  color:white;
+  color: #fff;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
   background-color: #ef233c;
 }
 .recipeSaveLink {
-  margin-left: 1em;
+  margin-left: 3em;
   padding: 0.5em;
 }
 a {
   text-decoration: none;
+}
+.print {
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: #8f8fa3;
+  font-family: 'Nunito Sons', sans-serif;
+  width: 4em;
+  height: 2em;
+}
+.recipeSaveLink, .recipeStuff {
+  display: inline-block;
 }
 /******************************************
 /* MEDIA QUERIES FOR RECIPE PAGE
@@ -367,7 +374,6 @@ a {
   }
   .recipeExtra {
     margin-left:  12em;
-    color: black;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -478,5 +484,10 @@ a {
   .recipeName {
     margin-right: 0;
   }
-  
+}
+@media print{ 
+  @page {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }

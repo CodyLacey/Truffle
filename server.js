@@ -36,21 +36,11 @@ app.post('/grabRecipe', (req, res) => {
     recipeScraper(url)
     .then(data => {
         res.render('recipe.ejs', {recipe: data})
-        console.log(data);
+        // console.log(data);
     })
-
-
-    // async function grabUrl() {
-    //     let data = await recipeScraper(url)
-        
-    // }
-    // grabUrl()
 })
 
-
-
-
-    app.listen(process.env.PORT || PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`server running on ${PORT}`);
 })
 
