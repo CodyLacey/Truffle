@@ -32,7 +32,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat; 
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image10.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/image11.jpg);
 }
 nav {
   position: fixed;
