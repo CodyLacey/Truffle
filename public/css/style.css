@@ -345,8 +345,6 @@ strong {
 .recipeSaveLink {
   margin-left: 3em;
   padding: 0.5em;
-}
-a {
   text-decoration: none;
 }
 .print {
@@ -360,6 +358,7 @@ a {
 .recipeSaveLink, .recipeStuff {
   display: inline-block;
 }
+
 /******************************************
 /* MEDIA QUERIES FOR RECIPE PAGE
 /*******************************************/
