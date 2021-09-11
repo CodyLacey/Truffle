@@ -1,34 +1,45 @@
 const express = require('express')
 const app = express()
-const MongoClient = require('mongodb').MongoClient
-const PORT = 8000
+const mongoose = require('mongoose')
+const passport = require('passport')
+const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
+const connectDB = require('./config/database')
+const authRoutes = require('./routes/auth')
+const homeRoutes = require('./routes/home')
+const todoRoutes = require('./routes/todos')
 const recipeScraper = require('recipe-scraper')
 
-// Mongo
-let db,
-    dbConnectionStr = 'mongodb+srv://db1:1234@cluster0.vjerq.mongodb.net/todo?retryWrites=true&w=majority',
-    dbName = 'GroceryList'
+require('dotenv').config({path: './config/.env'})
 
-MongoClient.connect(dbConnectionStr, {useUnifiedTopology: true})
-    .then(client => {
-        console.log(`Connected to ${dbName} Database`);
-        db = client.db(dbName)
-    })
+require('./config/passport')(passport)
 
-//
+connectDB()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    try{
-    res.render('index.ejs')
-    }catch {
-        console.log(err);
-    }
-})
+//Sessions
+app.use(
+    session({
+      secret: 'keyboard cat',
+      resave: false,
+      saveUninitialized: false,
+      store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    })
+)
+
+// Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
+
+
+app.use('/', homeRoutes)
+app.use('/auth', authRoutes)
+app.use('/todos', todoRoutes)
+
 
 app.post('/grabRecipe', (req, res) => {
     let url = req.body.url
@@ -40,7 +51,7 @@ app.post('/grabRecipe', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`server running on ${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`server running on ${process.env.PORT}`);
 })
 

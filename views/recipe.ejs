@@ -30,22 +30,25 @@
                 <i class="fas fa-search"></i>
                 <span class="tool tip2">Search</span>
             </a>
-            <a href="#" class="cart">
+            <a href="/todos" class="cart">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="tool tip3">Grocery</span>
             </a>
-            <a href="#" class="bottom">
+            <a href="../auth/logout" class="bottom">
                 <i class="fas fa-sign-out-alt"></i>
                 <span class="tool tip4">Logout</span>
             </a>
         </nav>
-        <section>
+        <section class="header">
             <h1 class="truffle smallTruffle">Truffle</h1>
             <form class="form smallForm" action="/grabRecipe" method="POST" autocomplete='off'>
                 <input id="input" class="importRecipe smallInput" type="text" name="url" placeholder="Paste the URL of a recipe" id="" required>
                 <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i class="fas fa-search"></i></button>
             </form>
-            <button>Sign in</button>
+            <div>
+                <a href="#" class="signIn smallSignIn">Sign in</a>
+            </div>
+            
         </section>
         <section id="recipe" class='recipe'>
             <section class="recipePt1">
@@ -114,7 +117,7 @@
 
 
 
-    <script src="js/main.js"></script>
+    <script src="js/recipe.js"></script>
 </body>
 
 </html>

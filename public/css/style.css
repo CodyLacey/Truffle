@@ -130,7 +130,20 @@ nav a:hover {
 .form{
   padding: 0 1em;
 }
-
+.signIn {
+  float: right;
+  clear: both;
+  font-family: 'Nunito Sons', sans-serif;
+  margin-right: 50px;
+  border: 3px solid black;
+  border-radius: 0.5em;
+  text-align: center !important;
+  transition: all 0.2s;
+  background-color: #fff;
+  padding: 15px 30px;
+  color: black;
+  text-decoration: none;
+}
 
 /******************************************
 /* MEDIA QUERIES FOR HOME PAGE
@@ -225,9 +238,9 @@ nav a:hover {
 /******************************************
 /* RECIPE PAGE
 /*******************************************/
-.smallTruffle, .smallInput{
-  float: left;
-  clear: both;
+.header{
+  display: flex;
+  align-content: center;
 }
 .smallForm{
   width: 40%;
@@ -358,6 +371,9 @@ strong {
 .recipeSaveLink, .recipeStuff {
   display: inline-block;
 }
+div {
+  margin-left: auto;
+}
 
 /******************************************
 /* MEDIA QUERIES FOR RECIPE PAGE
@@ -379,6 +395,9 @@ strong {
     position: relative;
     width: 80%;
     margin: 0;
+  }
+  .signIn{
+    display: none;
   }
   .page {
     padding-right: 0;
@@ -496,4 +515,15 @@ strong {
   .recipeName {
     padding: 0;
   }
+}
+/******************************************
+/* Grocery List
+/*******************************************/
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
 }

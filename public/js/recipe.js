@@ -1,5 +1,4 @@
-
-//store original recipe
+// store original recipe
 document.querySelector('.importRecipe2').addEventListener('click', store)
 function store() { 
     let url = document.getElementById('input')
@@ -11,7 +10,7 @@ document.getElementById('anchor').setAttribute('href', localStorage.getItem('url
 
 
 
-//Print
+// Print RECIPE
 document.querySelector('.print').addEventListener('click', printRecipe)
 function printRecipe(){
     document.title = document.querySelector('.recipeName').innerHTML
