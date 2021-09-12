@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/codylacey/truffle-cooking">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Truffle</h3>
@@ -31,10 +31,6 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#">Nodej</a>s</li>
-        <li><a href="#">Express</a></li>
-        <li><a href="#">Mongodb</a></li>
-        <li><a href="#">Mongoose</a></li>
       </ul>
     </li>
     <li>
