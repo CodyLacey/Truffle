@@ -13,7 +13,7 @@
     <a href="https://github.com/codylacey/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://truffle-cooking-herokuapp.com">View Demo</a>
+    <a href="https://truffle-cooking.herokuapp.com" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/codylacey/truffle-cooking/issues">Report Bug</a>
     ·
