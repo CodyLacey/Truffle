@@ -7,7 +7,7 @@ Array.from(deleteBtn).forEach((el)=>{
 })
 
 async function deleteTodo(){
-    const recipeItem = this.parentNode.parentNode.parentNode.dataset.id
+    const recipeItem = this.parentNode.parentNode.parentNode.parentNode.dataset.id
     try{
         const response = await fetch('cookbook/deleteRecipe', {
             method: 'delete',
