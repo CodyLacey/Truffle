@@ -66,7 +66,7 @@ nav a:hover {
   border: 1px solid #c0c0c0;
   opacity: 1; 
 }
-.top:hover .tip1, .search:hover .tip2, .cart:hover .tip3, .bottom:hover .tip4 {
+.top:hover .tip1, .search:hover .tip2, .cart:hover .tip3, .bottom:hover .tip4, .logout:hover .tip5 {
   display: block;
 }
 .tip1{
@@ -81,6 +81,9 @@ nav a:hover {
 }
 .tip4{
   top: 17.7em;
+}
+.tip5 {
+  top: 21.2em;
 }
 .top {
   margin-top: 100px;
@@ -256,6 +259,7 @@ nav a:hover {
   background: white;
   align-self: center;
   margin: auto;
+  box-shadow: -9px 17px 13px rgb(0 0 0 / 16%);
 }
 .recipePt1 {
   margin: 3em 3em 0 3em;
@@ -523,7 +527,6 @@ div {
 /******************************************
 /* Grocery List
 /*******************************************/
-
 .completed{
     text-decoration: line-through;
     color: gray;
@@ -531,6 +534,38 @@ div {
 .not{
     text-decoration: underline;
 }
+.todoContainer, .itemsLeftContainer {
+  display: flex;
+  margin-top: 60px;
+}
+.itemsLeft, .todoForm, .todoList {
+  margin: auto;
+}
+.itemsLeft {
+  font-size: 2em;
+  font-family: 'Nunito Sons', sans-serif;
+  padding-left: 10px;
+}
+.todoList {
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: -9px 17px 13px rgb(0 0 0 / 16%);
+}
+.todoItem {
+  font-size: 1.5em;
+  color: black;
+  font-family: 'Nunito Sons', sans-serif;
+  padding: 0.5em 0 0.5em 0;
+  text-decoration: none;
+  line-height: 1.5em;
+  list-style-type: none;
+  margin-right: 50px;
+}
+/******************************************
+/* MEDIA QUERIES FOR COOKBOOK
+/*******************************************/
+
+
 
 /******************************************
 /* Cookbook
@@ -541,6 +576,7 @@ div {
 .cookbookYourRecipes {
  margin: auto;
  margin-top: 30px;
+ margin-bottom: 50px;
 }
 .cookbookContainer {
   align-self: center;
@@ -558,6 +594,14 @@ div {
   height: 250px;
   width: 225px;
   border-radius: 1em;
+}
+.cookbookButton {
+  width: 225px;
+  height: 150px;
+  background-color: rgba(255, 225, 225, 0);
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border: 0;
 }
 .cookbookRecipeName, .cookbookOgLink, #cookbookTrash {
   position: absolute;

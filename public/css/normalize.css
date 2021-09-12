@@ -37,7 +37,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
+h1, .itemsLeft {
   font-family: 'Lobster', cursive;
   font-size: 7.5em;
   margin-bottom: 1%;

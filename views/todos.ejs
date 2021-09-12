@@ -39,36 +39,41 @@
         </nav>
         <section class="header">
             <h1 class="truffle smallTruffle">Truffle</h1>
-            <form class="form smallForm" action="/grabRecipe" method="POST" autocomplete='off'>
+            <form class="form smallForm" action="/recipe/grabRecipe" method="POST" autocomplete='off'>
                 <input id="input" class="importRecipe smallInput" type="text" name="url" placeholder="Paste the URL of a recipe"
                     id="" required>
                 <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i
                         class="fas fa-search"></i></button>
             </form>
-            <div>
-                <a href="/auth/login" class="signIn smallSignIn">Sign in</a>
-            </div>
         
         </section>
         <section>
-            <h1>Shopping List</h1>
-            <ul>
-                <% todos.forEach( el=> { %>
-                    <li class='todoItem' data-id='<%=el._id%>'>
-                        <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
-                        <span class='del'><i class="fas fa-trash"></i></span>
-                    </li>
-                        <% }) %>
-            </ul>
-
-            <h2>
-                <%= user.displayName %> has <%= left %> things left to grab.
-            </h2>
-
-            <form action="/todos/createTodo" method='POST' autocomplete="off">
+            <section class="cookbookTittle">
+                <h1 class="cookbookYourRecipes">Shopping List</h1>
+            </section>
+            <section class=todoContainer>
+                <ul class="todoList">
+                    <% todos.forEach( el=> { %>
+                        <li class='todoItem' data-id='<%=el._id%>'>
+                            <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
+                            <span id="todoTrash" class='del'><i class="fas fa-trash"></i></span>
+                        </li>
+                            <% }) %>
+                </ul>
+            </section>
+            <section class="itemsLeftContainer">
+                <h2 class="itemsLeft"> <%= user.displayName %> has <%= left %> things left to grab.</h2>
+            </section>
+            <form class="form smallForm todoForm" action="/todos/createTodo" method="POST" autocomplete='off'>
+                <input id="input" class="importRecipe smallInput" type="text" name="todoItem" placeholder="Enter a Grocery Item"
+                    id="" required>
+                <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i
+                        class="fas fa-search"></i></button>
+            </form>
+            <!-- <form action="/todos/createTodo" method='POST' autocomplete="off">
                 <input type="text" placeholder="Enter a Grocery Item" name='todoItem'>
                 <input type="submit">
-            </form>     
+            </form>      -->
         </section>
     </section>
     <script src="/js/todos.js"></script>
