@@ -26,7 +26,7 @@
             </a>
             <a href="/" class="Home">
                 <i class="fas fa-search"></i>
-                <span class="tool tip2">Search</span>
+                <span class="tool tip2">Home</span>
             </a>
             <a href="/todos" class="cart">
                 <i class="fas fa-shopping-cart"></i>
@@ -39,38 +39,39 @@
         </nav>
         <section class="header">
             <h1 class="truffle smallTruffle">Truffle</h1>
-            <form class="form smallForm" action="/grabRecipe" method="POST" autocomplete='off'>
-                <input id="input" class="importRecipe smallInput" type="text" name="url" placeholder="Paste the URL of a recipe"
-                    id="" required>
+            <form class="form smallForm" action="/recipe/grabRecipe" method="POST" autocomplete='off'>
+                <input id="input" class="importRecipe smallInput" type="text" name="url"
+                    placeholder="Paste the URL of a recipe" id="" required>
                 <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i
                         class="fas fa-search"></i></button>
             </form>
             <div>
                 <a href="/auth/login" class="signIn smallSignIn">Sign in</a>
             </div>
-        
-        </section>
-        <section>
-            <h1>Shopping List</h1>
-            <ul>
-                <% todos.forEach( el=> { %>
-                    <li class='todoItem' data-id='<%=el._id%>'>
-                        <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
-                        <span class='del'><i class="fas fa-trash"></i></span>
-                    </li>
-                        <% }) %>
-            </ul>
 
-            <h2>
-                <%= user.displayName %> has <%= left %> things left to grab.
-            </h2>
-
-            <form action="/todos/createTodo" method='POST' autocomplete="off">
-                <input type="text" placeholder="Enter a Grocery Item" name='todoItem'>
-                <input type="submit">
-            </form>     
         </section>
-    </section>
-    <script src="/js/todos.js"></script>
+            <section class="cookbookTittle">
+                <h1 class="cookbookYourRecipes">Your Recipes</h1>
+            </section>
+            
+            <section class="cookbookContainer">
+                <section class="yourRecipes">
+                    <% recipe.forEach( el=> { %>
+                        <section class='recipeItem' data-id='<%=el._id%>'>
+                            
+                            <section class="cookbookImgContainer" style="background:url('<%= el.image%>'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                <section class="containerRecipe">
+                                    <h2 class="cookbookRecipeName"> <%= el.name %> </h2>
+                                    <a class="cookbookOgLink" href="<%= el.url %>" target=_blank>Original Recipe</a>
+                                    <span id="cookbookTrash" class='del'><i class="fas fa-trash fa-lg"></i></span>
+                                    <!-- <span class="cookbookTrash" class='del'><i class="fas fa-trash fa-lg"></i></span> -->
+                                </section>
+                            </section>    
+                        </section>
+                    <% }) %>
+                </section>
+            </section>
+        </section>
+    <script src="/js/cookbook.js"></script>
+
 </html>
-    

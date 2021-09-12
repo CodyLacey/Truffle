@@ -14,25 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://kit.fontawesome.com/560ecaf078.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="back">
     <section class="page">
         <nav>
-            <a href="/" class="top">
+            <a href="/cookbook" class="top">
                 <i class="fas fa-book"></i>
                 <span class="tool tip1">Recipes</span>
             </a>
-            <a href="#" class="search">
+            <a href="/" class="Home">
                 <i class="fas fa-search"></i>
                 <span class="tool tip2">Search</span>
             </a>
             <a href="/todos" class="cart">
                 <i class="fas fa-shopping-cart"></i>
-                <span class="tool tip3">Grocery</span>
+                <span class="tool tip3">Shopping</span>
             </a>
             <a href="../auth/logout" class="bottom">
                 <i class="fas fa-sign-out-alt"></i>
@@ -41,12 +41,12 @@
         </nav>
         <section class="header">
             <h1 class="truffle smallTruffle">Truffle</h1>
-            <form class="form smallForm" action="/grabRecipe" method="POST" autocomplete='off'>
+            <form class="form smallForm" action="/recipe/grabRecipe" method="POST" autocomplete='off'>
                 <input id="input" class="importRecipe smallInput" type="text" name="url" placeholder="Paste the URL of a recipe" id="" required>
                 <button class="importRecipe2 smallButton" type="submit" value="Import" name="" id=""><i class="fas fa-search"></i></button>
             </form>
             <div>
-                <a href="#" class="signIn smallSignIn">Sign in</a>
+                <a href="/auth/login" class="signIn smallSignIn">Sign in</a>
             </div>
             
         </section>
@@ -69,12 +69,16 @@
                 </section> -->
             </section>
             <section class="recipeSave">
-                <a href="#" class="recipeSaveLink">
-                    <button class="button4">Save Recipe</button>
-                </a>
-                <a class="print">
+                <form action="/recipe/saveRecipe" method="POST" class=recipeSaveLink>
+                    <input type="hidden" name="url" id="recUrl" value="">
+                    <input type="hidden" name="name" id="" value="<%= recipe.name %>">
+                    <input type="hidden" name="image" id="" value="<%= recipe.image %>">
+                    <button id="saveRecipe" class="button4">Save Recipe</button>
+                    <!-- <span id="recUrl" name="recUrl"></span> -->
+                </form>
+                <button class="print">
                     <i id="print" class="fas fa-print"></i><span class="print">Print</span>
-                </a>
+                </button>
             </section>
             <section class="recipeStuff">
                 <section class="recipeExtra">
@@ -117,7 +121,7 @@
 
 
 
-    <script src="js/recipe.js"></script>
+    <script src="/js/recipe.js"></script>
 </body>
 
 </html>

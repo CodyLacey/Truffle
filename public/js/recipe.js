@@ -5,6 +5,15 @@ function store() {
     localStorage.setItem('url', url.value)
 }
 document.getElementById('anchor').setAttribute('href', localStorage.getItem('url'))
+document.getElementById('recUrl').value = localStorage.getItem('url')
+
+
+// SAVE RECIPE TO DB
+const button = document.getElementById('saveRecipe').addEventListener('click', save)
+function save() {
+    alert('Recipe has been saved!')
+    location.reload()
+}
 
 
 
@@ -15,7 +24,7 @@ document.querySelector('.print').addEventListener('click', printRecipe)
 function printRecipe(){
     document.title = document.querySelector('.recipeName').innerHTML
 
-    document.querySelector(".recipeSaveLink").style.display = "none"
+    document.querySelector(".recipeSave").style.display = "none"
     document.querySelector(".print").style.display = "none"
     document.querySelector(".recipeImage").style.display = "none"
 
@@ -28,9 +37,7 @@ function printRecipe(){
 
 	document.body.innerHTML = originalContents;
 
-    document.querySelector('.recipePt2').style.visibility = 'visible'
     document.querySelector(".print").style.display = "initial"
-    document.querySelector(".recipeSaveLink").style.display = "inline-block"
+    document.querySelector(".recipeSave").style.display = "inline-block"
     document.querySelector(".recipeImage").style.display = "block"
-
 }

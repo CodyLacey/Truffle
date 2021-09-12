@@ -8,7 +8,8 @@ const connectDB = require('./config/database')
 const authRoutes = require('./routes/auth')
 const homeRoutes = require('./routes/home')
 const todoRoutes = require('./routes/todos')
-const recipeScraper = require('recipe-scraper')
+const recipeRoutes = require('./routes/recipe')
+const cookbookRoutes = require('./routes/cookbook')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -39,19 +40,10 @@ app.use(passport.session())
 app.use('/', homeRoutes)
 app.use('/auth', authRoutes)
 app.use('/todos', todoRoutes)
+app.use('/recipe', recipeRoutes)
+app.use('/cookbook', cookbookRoutes)
 
-
-app.post('/grabRecipe', (req, res) => {
-    let url = req.body.url
-
-    recipeScraper(url)
-    .then(data => {
-        res.render('recipe.ejs', {recipe: data})
-        console.log(data);
-    })
-})
 
 app.listen(process.env.PORT, () => {
     console.log(`server running on ${process.env.PORT}`);
 })
-
