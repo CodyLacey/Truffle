@@ -622,7 +622,7 @@ div {
   color: black;
   background-color: white;
   margin: 0;
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
   font-family: 'Nunito Sons', sans-serif;
   font-size: 1.2em;
   border-top: 1px solid black;
