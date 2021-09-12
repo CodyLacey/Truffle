@@ -10,7 +10,7 @@
   <p align="center">
     Save your favorite recipes in one place. Import just the recipe from any website without the distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
     <br />
-    <a href="https://github.com/codylacey/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/codylacey/truffle-cooking"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://truffle-cooking.herokuapp.com" target="_blank">View Demo</a>
