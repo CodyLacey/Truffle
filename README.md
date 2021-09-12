@@ -2,22 +2,22 @@
 <br />
 <p align="center">
   <a href="https://github.com/codylacey/truffle-cooking">
-    <img src="/public/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://i.imgur.com/CI95yvX.png" alt="Logo" width="120" height="80">
   </a>
 
   <h3 align="center">Truffle</h3>
 
   <p align="center">
-    Save your favorite recipes in one place. Import just the recipe from any website without the distractions or clutter and generate grocery lists—Saffron’s everything a cook needs.
+    Save your favorite recipes in one place. Import just the recipe from any website without the distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
     <br />
     <a href="https://github.com/codylacey/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://truffle-cooking.herokuapp.com" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/codylacey/truffle-cooking/issues">Report Bug</a>
+    <a href="https://github.com/codylacey/truffle-cooking/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/codylacey/truffle-cooking/issues">Request Feature</a>
+    <a href="https://github.com/codylacey/truffle-cooking/issues" target="_blank">Request Feature</a>
   </p>
 </p>
 
@@ -54,18 +54,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://i.imgur.com/vVdc3X9.gif" width="60%" alt="truffle" data-canonical-src="https://i.imgur.com/vVdc3X9.gif" style="max-width:100%;">
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+Save your favorite recipes in one place. Import just the recipe from any website without distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Nodejs](https://nodejs.org/en/)
+* [Express](https://expressjs.com/)
+* [Mongodb](https://www.mongodb.com/)
+* [Mongoose](https://mongoosejs.com/docs/)
 
 
 
@@ -86,28 +85,17 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/codylacey/truffle-cooking.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/codylacey/truffle-cooking/issues) for a list of proposed features (and known issues).
 
 
 
@@ -134,21 +122,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@codylaceydev](https://twitter.com/codylaceydev) - email cody@codylacey.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
+Project Link: [https://github.com/codylacey/truffle-cooking](https://github.com/codylacey/truffle-cooking)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
