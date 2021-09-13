@@ -73,13 +73,12 @@ Save your favorite recipes in one place. Import just the recipe from any website
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+# Things to add
+
+- Create a `.env` file and add the following as `key = value`
+  - PORT = 2121 (can be any port example: 3000)
+  - DB_STRING = `your database URI`
 
 ### Installation
 
