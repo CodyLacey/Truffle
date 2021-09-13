@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/codylacey/truffle-cooking">
-    <img src="https://i.imgur.com/CI95yvX.png" alt="Logo" width="120" height="80">
+    <img src="https://i.imgur.com/CI95yvX.png" alt="Logo" width="200" height="80">
   </a>
 
   <h3 align="center">Truffle</h3>
