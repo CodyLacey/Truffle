@@ -5,7 +5,7 @@
     <img src="https://i.imgur.com/CI95yvX.png" alt="Logo" width="200" height="80">
   </a>
 
-  <h3 align="center">Truffle.</h3>
+  <h3 align="center">Truffle</h3>
 
   <p align="center">
     Save your favorite recipes in one place. Import just the recipe from any website without the distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
