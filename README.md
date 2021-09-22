@@ -8,7 +8,7 @@
   <h3 align="center">Truffle</h3>
 
   <p align="center">
-    Save your favorite recipes in one place. Import just the recipe from any website without the distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
+    Save your favorite recipes in one place Import just the recipe from any website without the distractions or clutter and generate grocery lists—Truffle’s everything a cook needs.
     <br />
     <a href="https://github.com/codylacey/truffle-cooking"><strong>Explore the docs »</strong></a>
     <br />
