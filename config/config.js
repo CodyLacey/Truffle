@@ -9,7 +9,7 @@ exports.creds = {
   
     responseMode: 'form_post', 
   
-    redirectUrl: 'https://truffle-cooking.herokuapp.com/auth/openid/return', 
+    redirectUrl: 'http://localhost:8000/auth/openid/return', 
   
     allowHttpForRedirectUrl: true,
   
@@ -37,7 +37,7 @@ exports.creds = {
     clockSkew: null,
   };
   
-  exports.destroySessionUrl = 'https://truffle-cooking.herokuapp.com/auth/openid/return';
+  exports.destroySessionUrl = 'http://localhost:8000/auth/openid/return';
   
   exports.useMongoDBSessionStore = false;
   
